@@ -4,5 +4,7 @@ A MATLAB script that, starting from the initial and final positions of the end-e
 
 ![alt text](https://github.com/domebevi/6-DOF-Robot-Manipulator-Control-via-MATLAB/blob/main/Manipulator_Model.jpg?raw=true)
 
+Video - https://youtu.be/iDRfgPZCutM?si=IsOIlsLm4LI3brsW
+
 Credits: Domenico Bevilacqua - domebevi@gmail.com  
 Carmen Perri - carmenperri3@gmail.com
