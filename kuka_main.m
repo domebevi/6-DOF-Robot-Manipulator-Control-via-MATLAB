@@ -43,12 +43,12 @@ PEi = inv(A)*[xi+px yi+py zi+pz 1]';            %posizione iniziale end-effector
 PEi = PEi(1:3,:);
 PEf = inv(A)*[x+px y+py z+pz 1]';               %posizione finale end-effector
 PEf = PEf(1:3,:);
-VEi = zeros(1,3);                               %velocit‡ iniziale end-effector
-VEf = zeros(1,3);                               %velocit‡ finale end-effector
+VEi = zeros(1,3);                               %velocit√† iniziale end-effector
+VEf = zeros(1,3);                               %velocit√† finale end-effector
 tf  = t;                                        %tempo finale operazione
 deltat = 0.01;                                  %intervallo di campionamento
 
-[Pe, Ve] = Pianifica_ee(PEi,PEf,VEi,VEf,tf,deltat); %Pe = posizioni dell'end-effector negli istanti di tempo, Ve = velocit‡ dell'end-effector negli istanti di tempo
+[Pe, Ve] = Pianifica_ee(PEi,PEf,VEi,VEf,tf,deltat); %Pe = posizioni dell'end-effector negli istanti di tempo, Ve = velocit√† dell'end-effector negli istanti di tempo
 
 T0.t = PEi;
 q0 = KUKA.ikunc(T0);
@@ -59,8 +59,8 @@ q0 = KUKA.ikunc(T0);
 q = q0;                                         %le variabili q partono da q0
 qnew = q;                                       %qnew variabile di appoggio per il ciclo
 q13 = q(:,1:3);                                 %q13 varibili di giunti trocanta ai primi tre elementi (il manipolatore non deve utilizzare il polso per movimenti lineari)
-q13_dot = zeros(1,3);                           %velocit‡ dei giunti
-q0_dot = zeros(1,3);                            %velocit‡ iniziale dei giunti
+q13_dot = zeros(1,3);                           %velocit√† dei giunti
+q0_dot = zeros(1,3);                            %velocit√† iniziale dei giunti
 
 
 for i = 1:1:n
