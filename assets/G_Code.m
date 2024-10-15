@@ -1,11 +1,11 @@
 function [] = G_Code(Pe,Ve)
 
-%  for i = 1 : length(Pe)            % Calcolo del modulo della velocit‡ dell'end effector
+%  for i = 1 : length(Pe)            % Calcolo del modulo della velocit√† dell'end effector
 %        Ve_mod(i) = norm(Ve(i,:));
 %        Ve_mod(i) = 2000;
 %  end
 
-% Ee = [Pe Ve_mod'];  % Matrice contenente posizione e modulo della velocit‡ dell'end effector
+% Ee = [Pe Ve_mod'];  % Matrice contenente posizione e modulo della velocit√† dell'end effector
 
 %Ee = [Pe Ve_mod'];
 %Ee1 = [Pe(1,1) Pe(1,2) Pe(1,3) 2000];
