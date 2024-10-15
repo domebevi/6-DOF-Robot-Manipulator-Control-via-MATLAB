@@ -19,7 +19,7 @@ Cx = Bx*A;
 Cy = By*A;
 Cz = Bz*A;
 
-%%Equazioni cubiche di traiettorie e velocit‡ lungo x y z
+%%Equazioni cubiche di traiettorie e velocit≈ï lungo x y z
 sx = Cx(1)*t.^3 + Cx(2)*t.^2 + Cx(3)*t + Cx(4);
 sx_dot = 3*Cx(1)*t.^2 + 2*Cx(2)*t+Cx(3);
 
